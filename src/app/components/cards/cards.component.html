@@ -1,0 +1,21 @@
+<p>
+  <ion-card>
+    <ion-card-header *ngIf="hasHeader">
+      <ion-card-subtitle> Last Series </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-icon name="tv" slot="start" ></ion-icon>
+        <ion-label>
+          Kaisi yeh Yaariyan
+          <p *ngIf="totalno">Total seasons: 4</p>
+          <p *ngIf="season">
+            Season {{season}}
+          </p>
+          <p *ngIf="episodes">Total no. of episodes : {{episodes}}</p>
+          <p *ngIf="extra">See All episodes here..</p>
+        </ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</p>

@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LoaderPageRoutingModule } from './loader-routing.module';
+import { SeriesssPageRoutingModule } from './seriesss-routing.module';
 
-import { LoaderPage } from './loader.page';
+import { SeriesssPage } from './seriesss.page';
 import { ComponentModule } from 'src/app/components/component.module';
 
 @NgModule({
@@ -15,8 +15,8 @@ import { ComponentModule } from 'src/app/components/component.module';
     FormsModule,
     IonicModule,
     ComponentModule,
-    LoaderPageRoutingModule
+    SeriesssPageRoutingModule
   ],
-  declarations: [LoaderPage]
+  declarations: [SeriesssPage]
 })
-export class LoaderPageModule {}
+export class SeriesssPageModule {}

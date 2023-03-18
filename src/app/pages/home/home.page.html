@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="scroll-y">  
+    <ion-list>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img
+            src="https://th.bing.com/th?id=OIP.dmCHhfN3bTnfwmv_NTRqwAHaI9&w=227&h=275&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+            alt="Manik Malhotra"
+          />
+        </ion-avatar>
+        <ion-label>
+          <h1>Manik Malhotra</h1>
+          <p class="name">Actor</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  
+
+    <app-cards  [hasHeader]="true" totalno="4"></app-cards>
+    <ion-button  color="success" size="full" fill="clear" (click)="gotoseries()">See All..</ion-button>
+
+    
+
+    
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button color="success" (click)="gotoseries()">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+</ion-content>
